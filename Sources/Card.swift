@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 */
 
-public struct PlayingCard {
+public struct Card {
     let rank: Rank
     let suit: Suit
 
@@ -20,23 +20,23 @@ public struct PlayingCard {
 
 // MARK: - Equatable
 
-extension PlayingCard: Equatable {}
+extension Card: Equatable {}
 
-public func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+public func ==(lhs: Card, rhs: Card) -> Bool {
     return lhs.rank == rhs.rank && lhs.suit == rhs.suit
 }
 
 // MARK: - Comparable
 
-extension PlayingCard: Comparable {}
+extension Card: Comparable {}
 
-public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+public func <(lhs: Card, rhs: Card) -> Bool {
     return lhs.rank == rhs.rank ? lhs.suit == rhs.suit : lhs.rank < rhs.rank
 }
 
 // MARK: - CustomStringConvertible
 
-extension PlayingCard : CustomStringConvertible {
+extension Card : CustomStringConvertible {
     public var description: String {
         return "\(rank)\(suit)"
     }
