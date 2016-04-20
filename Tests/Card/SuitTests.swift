@@ -11,7 +11,7 @@
 import XCTest
 @testable import PlayingCard
 
-class SuitTest: XCTestCase {
+class SuitTests: XCTestCase {
     
     func testSuitStringEquality(){
         let c:Suit = .clubs

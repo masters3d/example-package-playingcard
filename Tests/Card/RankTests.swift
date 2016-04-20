@@ -11,7 +11,7 @@
 import XCTest
 @testable import PlayingCard
 
-class RankTest: XCTestCase {
+class RankTests: XCTestCase {
     
     func testRankStringEquality(){
         let numbers = [2,3,4,5,6,7,8,9,10]

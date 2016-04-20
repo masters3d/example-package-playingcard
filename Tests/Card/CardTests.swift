@@ -11,7 +11,7 @@
 import XCTest
 @testable import PlayingCard
 
-class CardTest: XCTestCase {
+class CardTests: XCTestCase {
     
     func testCardSingle(){
         let card1 = Card(rank: .queen, suit: .diamonds)
