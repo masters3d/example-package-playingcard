@@ -16,4 +16,3 @@ XCTMain([testCase(CardTest.allTest),
          testCase(RankTest.allTest),
          testCase(SuitTest.allTest)
         ])
-

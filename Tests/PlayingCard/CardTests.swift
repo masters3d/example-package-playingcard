@@ -11,7 +11,6 @@
 @testable import PlayingCard
 import XCTest
 
-
 class CardTests: XCTestCase {
     
     func testCardSingle(){
@@ -34,6 +33,5 @@ class CardTests: XCTestCase {
         XCTAssertEqual(String(card2), "2♡")
         XCTAssertEqual(String(card3), "Q♢")
     }
-    
     
 }

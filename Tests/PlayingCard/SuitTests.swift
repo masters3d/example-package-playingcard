@@ -11,7 +11,6 @@
 @testable import PlayingCard
 import XCTest
 
-
 class SuitTests: XCTestCase {
     
     func testSuitStringEquality(){
